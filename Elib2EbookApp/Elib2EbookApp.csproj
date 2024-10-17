@@ -1,0 +1,29 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <OutputType>WinExe</OutputType>
+        <TargetFramework>net8.0-windows</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Authors>𝔸𝕝𝕖𝕩 𝕂𝕠𝕟𝕠𝕡𝕖𝕝𝕜𝕠</Authors>
+        <UseWPF>true</UseWPF>
+        <ApplicationIcon>eBookDownload.ico</ApplicationIcon>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <Resource Include="eBookDownload.ico" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <PackageReference Include="CommunityToolkit.Mvvm" Version="8.3.2" />
+        <PackageReference Include="MainServiceProvider" Version="1.0.0" />
+        <PackageReference Include="MaterialDesignThemes.MahApps" Version="3.1.0" />
+        <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+        <PackageReference Include="NLog" Version="5.3.4" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="..\Core\Core.csproj" />
+        <ProjectReference Include="..\Elib2EbookCli\Elib2EbookCli.csproj" />
+    </ItemGroup>
+
+</Project>
